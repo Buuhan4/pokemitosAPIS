@@ -57,6 +57,13 @@ body {
   margin-bottom: 10px;
 }
 
+
+.poke-card h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  word-wrap: break-word;
+}
+
 .poke-card-back {
   position: absolute;
   top: 0;
@@ -208,4 +215,50 @@ button:disabled {
 .type-steel {
   background-color: silver;
   color: black;
+}
+
+@media (max-width: 1024px) {
+  .poke-card {
+    width: calc(25% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .poke-card {
+    width: calc(33.33% - 20px);
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .poke-card h2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .poke-card {
+    width: calc(50% - 20px);
+    height: 280px;
+  }
+
+  .pokemon-container {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .poke-card img {
+    width: 60%;
+  }
+
+  .poke-card h2 {
+    font-size: 9px;
+    margin: 5px 0;
+  }
 }
